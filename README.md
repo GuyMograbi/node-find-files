@@ -43,6 +43,6 @@ You can set up the finder object with any filter function you like
     var finder = new FindFiles({
         rootFolder : "/Users",
         filterFunction : function (path, stat) {
-            return (stat.mtime > d) ? true : false;
+            return stat.mtime > d;
         }
     });
